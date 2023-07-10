@@ -38,7 +38,7 @@ export class Navbar extends Component {
                     <Link className="nav-link " aria-current="page" to="/">Home</Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link" target={'_blank'} href="https://github.com/singh-sambhav" data-bs-toggle="tooltip" data-bs-placement="top" title="About Author" >About us</a>
+                    <a className="nav-link" target={'_blank'} href="https://github.com/SHIV3710" data-bs-toggle="tooltip" data-bs-placement="top" title="About Author" >About us</a>
                     </li>
                     <li className="nav-item">
                     <Link className="nav-link" to="/business"  >Business</Link>
