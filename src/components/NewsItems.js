@@ -8,7 +8,7 @@ export class NewsItems extends Component {
         let {tittle,description,imageUrl,url,author,date,source} = this.props; //destructuring of props
         return (
       <div className='newsitem' style={{ webkitBoxShadow: '0px 0px 10px -10px rgba(0, 0, 0, 0.75)',
-          boxShadow: '0px 0px 25px -10px rgba(0, 0, 0, 1)'
+          boxShadow: '0px 0px 25px -10px rgba(0, 0, 0, 0.75)'
       }}>
             <div className="card my-1" >
               <span className="position-absolute top-0  translate-middle badge rounded-pill bg-danger" style={{zIndex:"1",left:"10%"}}>

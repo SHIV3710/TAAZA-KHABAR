@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Link,useNavigate } from 'react-router-dom'
 // import { useNavigation } from '@react-navigation/native';
-import {Search} from "@material-ui/icons";
 
 export class Navbar extends Component {
   constructor (){
@@ -33,7 +32,7 @@ export class Navbar extends Component {
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>
                 </button>
-                <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{display:'flex',justifyContent:'space-between'}}>
+                <div className="collapse navbar-collapse" id="navbarSupportedContent" style={{display:'flex',justifyContent:'space-around',alignItem:'center'}}>
                 <ul className="navbar-nav me-auto mb-3 mb-lg-0">
                     <li className="nav-item">
                     <Link className="nav-link " aria-current="page" to="/">Home</Link>
@@ -63,8 +62,8 @@ export class Navbar extends Component {
                     <Link className="nav-link" to="technology"  >Technology</Link>
                     </li>
 
-                    <div className="btn-group mx-3" style={{margin:'0rem 0rem'}}>
-                      <button type="button" className="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style={{border:'2px solid aquamarine',color:'antiquewhite',height:'2.2rem',marginTop:'0.3rem'}}>
+                    <div className="btn-group mx-3" style={{margin:'0rem 1rem'}}>
+                      <button type="button" className="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" style={{border:'2px solid aquamarine',color:'antiquewhite',height:'3rem',marginTop:'0.3rem'}}>
                         News per page
                       </button>
                       <ul className="dropdown-menu" style={{cursor:'pointer'}}>
@@ -77,9 +76,9 @@ export class Navbar extends Component {
                       </ul>
                     </div>
                     <form onSubmit={this.handleSubmit} className="mx-4 d-flex" role="search">
-                      <input id='search' className="form-control me-2" type="search" placeholder="Search" aria-label="Search" name='search' onChange={this.handleChange} style={{height:'2.5rem',
+                      <input id='search' className="form-control me-2" type="search" placeholder="Search" aria-label="Search" name='search' onChange={this.handleChange} style={{height:'3rem',
                       width:'7rem',marginTop:'0.3rem'}} onKeyUp={(e)=>(e.key==='Enter')?this.handleChange(e):''}/>
-                      <Link style={{border:'2px solid aquamarine',color:'aliceblue',fontFamily:'cursive',height:'2.5rem',marginTop:'0.3rem'}} className="btn btn-outline-success" to="search"  onClick={this.search}><Search></Search></Link>
+                      <Link style={{border:'2px solid aquamarine',color:'aliceblue',fontFamily:'cursive',height:'3rem',marginTop:'0.3rem'}} className="btn btn-outline-success" to="search"  onClick={this.search}>Search</Link>
                       {/* navigated by Link,to , and value pass by storing in a state  */}
                     </form>
                     
